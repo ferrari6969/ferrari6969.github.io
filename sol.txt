@@ -1,3 +1,11 @@
+gedit name.l
+gedit name.y
+lex name.l
+yacc -d name.y
+cc lex.yy.c y.tab.c -ll -lm
+./a.out
+
+
 import torch.optim as optim
 import torch.optim.lr_scheduler as lr_scheduler
 from torch.optim.lr_scheduler import _LRScheduler
